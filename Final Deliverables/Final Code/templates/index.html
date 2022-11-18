@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title>Handwritten Digit Recognizer</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="header">
+      <h1 class="welcome">Handwritten Digit Recognizer</h1>
+      <div class="navbar">
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="{{ url_for('web') }}">Recognize</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="body-container">
+      <div class="background-image">
+        <img class="image" src="/static/images/number_bg.jpg">
+        </div>
+        <div class="content">
+          <h1 class="title">About the Project</h1>
+          <br>
+          <br>
+          <br>
+          <div class="details">
+            <p>
+            Handwritten Digit Recognition is the need-of-the-hour technology in the current scenario. This Digit
+            Recognition System is used to identify the digits from different sources like invoices, posts, email and so
+            on. Since people relied on entering the digit from the sources manually, this technology was required to be
+            properly implemented. This could help in reducing the manual errors and the difficulty in efficiently
+            storing and accessing physical data. This project performs the recognition of handwritten digits [0-9] from
+            the MNIST dataset, using a Convolutional Neural Network.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+* {
+  border: 0;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  float: left;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  /* float: left; */
+  background-color: aliceblue;
+  border-bottom: 5px solid grey;
+}
+
+.welcome {
+  padding: 30px;
+  float: left;
+  color: black;
+  font-size: 20px;
+  font-family: system-ui;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 20px;
+  float: right;
+  margin: 10px;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+  margin: 0px 10px;
+  color: brown;
+}
+
+li a {
+  display: inline;
+  font: status-bar;
+  text-align: center;
+  font-size: 20px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: teal;
+}
+
+li a:hover {
+  color: rebeccapurple;
+}
+
+.body-container {
+  width: 100%;
+  float: center;
+  height: 87%;
+}
+
+.details {
+  width: 100%;
+    float: left;
+    height: 100px;
+    margin: 10px;
+    text-align: justify;
+    font-size: larger;
+    font-family: system-ui;
+}
+
+.background-image {
+  width: 100%;
+  float: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.content {
+  position: absolute;
+  padding: 20px;
+  width: 90%;
+  height: 100px;
+  text-align: justify;
+  color: darkred;
+  margin: 10px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  /* padding: 10px; */
+  /* margin: 10px; */
+}
+
+.imgfile {
+  margin: 30px;
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* float: left; */
+  font-family: system-ui;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.image-frame {
+  border: 3px solid rgb(255, 255, 255);
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.img::after {
+  width: 200px;
+  height: 200px;
+}
+
+.buttons {
+  margin: 30px;
+  text-align: center;
+}
+
+.btn {
+  padding: 15px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+#clear_button{
+  margin-left: 15px;
+  font-weight: bold;
+  color: rgb(0, 174, 255);
+}
+
+#predict_button{
+  margin-right: 15px;
+  color: rgb(0, 255, 72);
+  font-weight: bold;
+}
+
+.result {
+  text-align: center;
+    margin: 0 auto;
+    padding: 3% 5%;
+    padding-top: 0;
+}

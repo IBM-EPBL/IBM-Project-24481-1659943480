@@ -1,0 +1,142 @@
+* {
+  border: 0;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  float: center;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  float: left;
+  background-color: burlywood;
+  border-bottom: 5px solid grey;
+}
+
+.welcome {
+  padding: 30px;
+  float: left;
+  color: black;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 30px;
+  float: right;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+  margin: 0px 10px;
+  color: brown;
+}
+
+li a {
+  display: inline;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: aquamarine;
+}
+
+li a:hover {
+  color: rebeccapurple;
+}
+
+.body-container {
+  width: 100%;
+  float: center;
+
+}
+
+.details {
+  width: 100%;
+  float: center;
+  height: 100px;
+  text-align: justify;
+}
+
+.background-image {
+  width: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image {
+  width: 100%;
+  height: 650px;
+  float: left;
+}
+
+.content {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+  text-align: justify;
+  color: darkred;
+
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+}
+
+.imgfile {
+  margin: 30px;
+}
+
+.image-frame {
+  border: 3px solid rgb(255, 255, 255);
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.img::after {
+  width: 200px;
+  height: 200px;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+.btn {
+  padding: 15px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+#clear_button{
+  margin-left: 15px;
+  font-weight: bold;
+  color: rgb(0, 174, 255);
+}
+
+#predict_button{
+  margin-right: 15px;
+  color: rgb(0, 255, 72);
+  font-weight: bold;
+}

@@ -1,0 +1,63 @@
+<head>
+    <title>Handwritten Digit Recognizer</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1 class="welcome">Handwritten Digit Recognizer</h1>
+            <div class="navbar">
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <li><a href="{{ url_for('web') }}">Recognize</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="background-image">
+                <img class="image" src="/static/images/bgbg.jfif">
+                <div class="content">
+                    <form action="/web" method="POST" enctype="multipart/form-data">
+                        <div class="imgfile">
+                            <label>Select an Image:</label>
+                            <input id="image" type="file" name="image" accept="image/png, image/jpeg"
+                                onchange="preview()">
+                        </div>
+                        <div class="image-frame">
+                            <img id="frame" class="img" width="100px" height="100px" />
+                        </div>
+                        <div class="buttons">
+                            <button type="submit" id="predict_button" class="btn">Predict</button>
+                            <button type="button" id="clear_button" class="btn" onclick="clearImage()">&nbsp Clear
+                                &nbsp</button>
+                        </div>
+                        <div>
+                            <h2>The number is: {{ num }} </h2>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function preview() {
+        document.getElementById("frame").src = URL.createObjectURL(event.target.files[0]);
+    }
+
+    function clearImage() {
+        document.getElementById("frame").src = "";
+        document.getElementById("image").value = "";
+    }
+</script>
+
+</html>
